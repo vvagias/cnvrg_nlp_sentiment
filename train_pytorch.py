@@ -11,8 +11,8 @@ def read_imdb_split(split_dir):
 
     return texts, labels
 
-train_texts, train_labels = read_imdb_split('/data/aclimdb/train')
-test_texts, test_labels = read_imdb_split('/data/aclimdb/test')
+train_texts, train_labels = read_imdb_split('/data/aclimdb-1/train')
+test_texts, test_labels = read_imdb_split('/data/aclimdb-1/test')
 
 from sklearn.model_selection import train_test_split
 train_texts, val_texts, train_labels, val_labels = train_test_split(train_texts, train_labels, test_size=.2)
