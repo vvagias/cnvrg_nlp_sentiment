@@ -3,3 +3,4 @@ transformers
 ipywidgets
 dash
 msrest==0.6.21
+numpy==1.20.3
