@@ -2,3 +2,4 @@ sklearn
 transformers
 ipywidgets
 dash
+msrest==0.6.21
