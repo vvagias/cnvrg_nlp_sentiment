@@ -37,15 +37,15 @@ def update_output_div(n_clicks, input_value):
     # loop on user's or prepared questions
     #generate response
     import http.client
-    conn = http.client.HTTPSConnection("sentiment-ws-1.aalk4m89gwugsbjwmhe9fg6.cloud.cnvrg.io")
+    conn = http.client.HTTPSConnection("ws-nlp-2-1.acdtpmm6yz46nug9xz53ord.cloud.cnvrg.io")
     #conn = http.client.HTTPSConnection("sentiment-1.prod.cnvrg.io")
     payload = "{\"input_params\": \"" + input_value + "\"}"
     headers = {
-        'Cnvrg-Api-Key': "DGTCjezhqgHY38ZGKQAfphNW",
-        'Content-Type': "application/json"
-        }
+    'Cnvrg-Api-Key': "xjby1MzVjbGe7FT3Er8DQZHU",
+    'Content-Type': "application/json"
+    }
 
-    conn.request("POST", "/api/v1/endpoints/myvlfvccztf9deaaxc4y", payload, headers)
+    conn.request("POST", "/api/v1/endpoints/ebs613s5wd98extvom7x", payload, headers)
     res = conn.getresponse()
     data = res.read()
     data = json.loads(data)
