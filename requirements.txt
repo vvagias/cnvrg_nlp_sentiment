@@ -1,5 +1,5 @@
 sklearn
-transformers
+transformers==4.6.0
 ipywidgets
 dash
 msrest==0.6.21
